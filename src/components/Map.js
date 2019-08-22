@@ -28,12 +28,12 @@ class Map extends React.Component {
     var map = new mapboxgl.Map({
       container: "map-container", // HTML container id
       style: "mapbox://styles/mapbox/streets-v9", // style URL
-      center: [-21.9270884, 64.1436456], // starting position as [lng, lat]
-      zoom: 13
+      center: [-46.476616,  -23.978113], // starting position as [lng, lat]
+      zoom: 15
     });
     
     var marker = new mapboxgl.Marker()
-      .setLngLat([-21.9270884, 64.1436456])
+      .setLngLat([-46.476616,  -23.978113])
       .addTo(map);
   }
 
