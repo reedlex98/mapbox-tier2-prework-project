@@ -3,9 +3,6 @@ const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 const MapboxGeocoder = require("@mapbox/mapbox-gl-geocoder");
 
 class Map extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   createMap(accessToken, config) {
     mapboxgl.accessToken = accessToken;
