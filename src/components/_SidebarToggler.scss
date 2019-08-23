@@ -1,0 +1,15 @@
+.rounded-button{
+    border-radius: 100%;
+    border: 1px solid black;
+    padding: 25px;
+    color: rgba($color: #FFF, $alpha: .7);
+    background-color: rgba($color: #000055, $alpha: 0.5);
+}
+
+.sidebar-toggler{
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    right: 25px;
+    bottom: 25px;
+}

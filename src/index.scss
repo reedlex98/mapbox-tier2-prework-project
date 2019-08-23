@@ -1,1 +1,10 @@
-@import './components/_Map'
+@import './components/_Map';
+@import './components/_Sidebar';
+@import './components/_SidebarToggler';
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
