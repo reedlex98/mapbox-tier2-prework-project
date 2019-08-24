@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/mapbox-tier2-prework-project/static/css/main.32abc8e8.chunk.css",
+    "main.js": "/mapbox-tier2-prework-project/static/js/main.0127f90e.chunk.js",
+    "main.js.map": "/mapbox-tier2-prework-project/static/js/main.0127f90e.chunk.js.map",
+    "runtime~main.js": "/mapbox-tier2-prework-project/static/js/runtime~main.b89faf35.js",
+    "runtime~main.js.map": "/mapbox-tier2-prework-project/static/js/runtime~main.b89faf35.js.map",
+    "static/css/2.6639d161.chunk.css": "/mapbox-tier2-prework-project/static/css/2.6639d161.chunk.css",
+    "static/js/2.dd27ec49.chunk.js": "/mapbox-tier2-prework-project/static/js/2.dd27ec49.chunk.js",
+    "static/js/2.dd27ec49.chunk.js.map": "/mapbox-tier2-prework-project/static/js/2.dd27ec49.chunk.js.map",
+    "index.html": "/mapbox-tier2-prework-project/index.html",
+    "precache-manifest.ef5662da68c0d08b90721c3beadc27d6.js": "/mapbox-tier2-prework-project/precache-manifest.ef5662da68c0d08b90721c3beadc27d6.js",
+    "service-worker.js": "/mapbox-tier2-prework-project/service-worker.js",
+    "static/css/2.6639d161.chunk.css.map": "/mapbox-tier2-prework-project/static/css/2.6639d161.chunk.css.map",
+    "static/css/main.32abc8e8.chunk.css.map": "/mapbox-tier2-prework-project/static/css/main.32abc8e8.chunk.css.map"
+  }
+}
