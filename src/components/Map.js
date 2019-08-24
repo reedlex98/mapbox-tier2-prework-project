@@ -98,13 +98,15 @@ class Map extends React.Component {
       accessToken: mapboxgl.accessToken,
       mapboxgl: mapboxgl,
       marker: true,
+      placeholder: 'Search for a place in Sao Vicente',
       proximity: {
         latitude: -23.978113,
         longitude: -46.476616
       },
-      limit: 3
+      bbox: [-46.650268293716294,-24.00971344305148,-46.35592184956596,-23.898951151178693],
+      limit: 5
     });
-
+    
     document.getElementById("geocoder").appendChild(geocoder.onAdd(map));
   }
 

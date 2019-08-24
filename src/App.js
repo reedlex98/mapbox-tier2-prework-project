@@ -1,5 +1,6 @@
 import React from "react";
 import Map from "./components/Map";
+// import MapContainer from "./components/MapContainer";
 import Sidebar from "./components/Sidebar";
 import SidebarToggler from "./components/SidebarToggler";
 
@@ -35,7 +36,7 @@ class App extends React.Component {
           isSidebarCollapsed={this.state.isSidebarCollapsed}
           toggleSidebar={this.toggleSidebar}
         />
-        <Map />
+        <Map/>
       </div>
     );
   }
