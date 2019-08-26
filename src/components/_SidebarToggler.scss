@@ -16,7 +16,7 @@
 
 .sidebar-toggler:hover::before{
     font-size: 0.25em;
-    bottom: 70px;
+    bottom: 80px;
     right: -15px;
     width: 80px;
     padding: 5px 10px;
@@ -24,4 +24,13 @@
     background-color: rgba($color: #000100, $alpha: 0.85);
     position: absolute;
     content: 'Toggle Menu'
+}
+
+.tutorial-arrow{
+    color: rgba($color: #FFF, $alpha: 0.7);
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+    transform: scale(10);
+    z-index: 2;
 }

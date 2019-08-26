@@ -1,6 +1,7 @@
 import React from "react";
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
-const MapboxGeocoder = require("@mapbox/mapbox-gl-geocoder");
+
+// const MapboxGeocoder = require("@mapbox/mapbox-gl-geocoder");
 
 class Map extends React.Component {
 
@@ -10,74 +11,18 @@ class Map extends React.Component {
   }
 
   createMarkers(geojson, map) {
-    geojson.features.forEach(function(marker) {
-      new mapboxgl.Marker().setLngLat(marker.geometry.coordinates).addTo(map);
+    geojson.forEach(function(marker) {
+      const el = document.createElement('div')
+      el.classList.add('marker')
+      new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates)
+      .setPopup(new mapboxgl.Popup({ offset: 25 })
+      .setHTML(`<h3> ${marker.properties.title}</h3>
+                <p>
+                  ${marker.properties.description}
+                </p>`
+              ))
+      .addTo(map);
     });
-  }
-
-  initGeoJson() {
-    return {
-      type: "FeatureCollection",
-      features: [
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-46.476616, -23.978113]
-          },
-          properties: {
-            title: "Mapbox",
-            description:
-              "Rua Eduardo Cacao, Jardim Rio Branco, Sao Vicente, Sao Paulo"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-46.466608, -23.984892]
-          },
-          properties: {
-            title: "Mapbox",
-            description:
-              "Supermercado Mini Preço, Jardim Rio Branco, Sao Vicente, Sao Paulo"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-46.386018, -23.970975]
-          },
-          properties: {
-            title: "Mapbox",
-            description: "Biquinha de Anchieta, Centro, Sao Vicente, Sao Paulo"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-46.370849, -23.977406]
-          },
-          properties: {
-            title: "Mapbox",
-            description: "Ilha Porchat, Itararé, Sao Vicente, Sao Paulo"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-46.350136, -23.971674]
-          },
-          properties: {
-            title: "Mapbox",
-            description: "Emissário Submarino, José Menino, Santos, Sao Paulo"
-          }
-        }
-      ]
-    };
   }
 
   componentDidMount() {
@@ -86,28 +31,28 @@ class Map extends React.Component {
       {
         container: "map-container", // HTML container id
         style: "mapbox://styles/mapbox/navigation-preview-night-v2", // style URL
-        center: [-46.476616, -23.978113], // starting position as [lng, lat]
+        center: [-46.38365788608155,-23.9593187188718], // starting position as [lng, lat]
         pitch: 85,
         bearing: -27.6,
         zoom: 13
       }
     );
-    this.createMarkers(this.initGeoJson(), map);
-
-    const geocoder = new MapboxGeocoder({
-      accessToken: mapboxgl.accessToken,
-      mapboxgl: mapboxgl,
-      marker: true,
-      placeholder: 'Search for a place in Sao Vicente',
-      proximity: {
-        latitude: -23.978113,
-        longitude: -46.476616
-      },
-      bbox: [-46.650268293716294,-24.00971344305148,-46.35592184956596,-23.898951151178693],
-      limit: 5
-    });
     
-    document.getElementById("geocoder").appendChild(geocoder.onAdd(map));
+    this.createMarkers(this.props.locations, map);
+    // const geocoder = new MapboxGeocoder({
+    //   accessToken: mapboxgl.accessToken,
+    //   mapboxgl: mapboxgl,
+    //   marker: true,
+    //   placeholder: 'Search for a place in Sao Vicente',
+    //   proximity: {
+    //     latitude: -23.978113,
+    //     longitude: -46.476616
+    //   },
+    //   bbox: [-46.650268293716294,-24.00971344305148,-46.35592184956596,-23.898951151178693],
+    //   limit: 5
+    // });
+    
+    // document.getElementById("geocoder").appendChild(geocoder.onAdd(map));
   }
 
   render() {

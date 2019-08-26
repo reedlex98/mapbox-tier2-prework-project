@@ -1,0 +1,28 @@
+.marker {
+  background-image: url("../assets/position.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  transition: all 0.05s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+.marker:hover {
+  width: 100px;
+  height: 100px;
+}
+.mapboxgl-popup {
+  max-width: 300px;
+}
+
+.mapboxgl-popup-tip {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  background-color: rgba($color: #002200, $alpha: .5) !important;
+  border-radius: 15px !important;
+  padding: 25px !important;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}

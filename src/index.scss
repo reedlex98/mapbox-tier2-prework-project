@@ -1,7 +1,9 @@
 @import './components/_Map';
 @import './components/_Sidebar';
 @import './components/_SidebarToggler';
-@import './components/_Geocoder';
+@import './components/_Filter';
+@import './components/_Marker';
+
 
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif

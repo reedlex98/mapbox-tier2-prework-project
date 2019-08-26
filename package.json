@@ -16,7 +16,7 @@
     "react-map-gl": "^5.0.10",
     "react-scripts": "3.1.1"
   },
-  "homepage": "https://reedlex98.github.io/mapbox-tier2-prework-project",
+  "homepage": "https://reedlex98.github.io/mapbox-tier2-prework-project/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

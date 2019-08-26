@@ -1,9 +1,11 @@
-import React from 'react'
-import Geocoder from './Geocoder'
+import React from "react";
 
-const Sidebar = props =>   {
-    return <div className={`sidebar ${props.isSidebarCollapsed && 'collapse'}`}>
-        <Geocoder/>
+const Sidebar = props => {
+  return (
+    <div className={`sidebar ${props.isSidebarCollapsed && "collapse"}`}>
+        {props.children}
     </div>
-}
-export default Sidebar
+  );
+};
+
+export default Sidebar;
