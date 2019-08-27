@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/mapbox-tier2-prework-project/static/css/main.d44eb4ee.chunk.css",
-    "main.js": "/mapbox-tier2-prework-project/static/js/main.6aab6d6b.chunk.js",
-    "main.js.map": "/mapbox-tier2-prework-project/static/js/main.6aab6d6b.chunk.js.map",
+    "main.css": "/mapbox-tier2-prework-project/static/css/main.93a82a4b.chunk.css",
+    "main.js": "/mapbox-tier2-prework-project/static/js/main.761a9505.chunk.js",
+    "main.js.map": "/mapbox-tier2-prework-project/static/js/main.761a9505.chunk.js.map",
     "runtime~main.js": "/mapbox-tier2-prework-project/static/js/runtime~main.b89faf35.js",
     "runtime~main.js.map": "/mapbox-tier2-prework-project/static/js/runtime~main.b89faf35.js.map",
-    "static/css/2.6639d161.chunk.css": "/mapbox-tier2-prework-project/static/css/2.6639d161.chunk.css",
-    "static/js/2.c6a73ee6.chunk.js": "/mapbox-tier2-prework-project/static/js/2.c6a73ee6.chunk.js",
-    "static/js/2.c6a73ee6.chunk.js.map": "/mapbox-tier2-prework-project/static/js/2.c6a73ee6.chunk.js.map",
+    "static/css/2.efc0716b.chunk.css": "/mapbox-tier2-prework-project/static/css/2.efc0716b.chunk.css",
+    "static/js/2.7974d2f9.chunk.js": "/mapbox-tier2-prework-project/static/js/2.7974d2f9.chunk.js",
+    "static/js/2.7974d2f9.chunk.js.map": "/mapbox-tier2-prework-project/static/js/2.7974d2f9.chunk.js.map",
     "index.html": "/mapbox-tier2-prework-project/index.html",
-    "precache-manifest.30adb65939f2251bbb7d2b5410e92057.js": "/mapbox-tier2-prework-project/precache-manifest.30adb65939f2251bbb7d2b5410e92057.js",
+    "precache-manifest.4355486420a702298225b6aaf7e56b88.js": "/mapbox-tier2-prework-project/precache-manifest.4355486420a702298225b6aaf7e56b88.js",
     "service-worker.js": "/mapbox-tier2-prework-project/service-worker.js",
-    "static/css/2.6639d161.chunk.css.map": "/mapbox-tier2-prework-project/static/css/2.6639d161.chunk.css.map",
-    "static/css/main.d44eb4ee.chunk.css.map": "/mapbox-tier2-prework-project/static/css/main.d44eb4ee.chunk.css.map"
+    "static/css/2.efc0716b.chunk.css.map": "/mapbox-tier2-prework-project/static/css/2.efc0716b.chunk.css.map",
+    "static/css/main.93a82a4b.chunk.css.map": "/mapbox-tier2-prework-project/static/css/main.93a82a4b.chunk.css.map"
   }
 }
