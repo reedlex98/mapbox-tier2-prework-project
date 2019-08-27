@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b3b32b9fa266350c7eb1a7ae969a2f4f",
+    "revision": "ea24ccf327dae2a59ec4b0725391d4c3",
     "url": "/mapbox-tier2-prework-project/index.html"
   },
   {
