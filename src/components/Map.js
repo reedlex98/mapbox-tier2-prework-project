@@ -31,10 +31,10 @@ class Map extends React.Component {
       {
         container: "map-container", // HTML container id
         style: "mapbox://styles/mapbox/navigation-preview-night-v2", // style URL
-        center: [-46.38365788608155,-23.9593187188718], // starting position as [lng, lat]
-        pitch: 85,
-        bearing: -27.6,
-        zoom: 13
+        center: [-46.37464788608155,-23.9688189188999], // starting position as [lng, lat]
+        pitch: 80,
+        bearing: -17.6,
+        zoom: 14
       }
     );
     this.createMarkers(this.props.locations, globalMap);
