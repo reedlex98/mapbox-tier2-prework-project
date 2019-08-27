@@ -65,7 +65,7 @@ const locations = {
           coordinates: [-46.36641808465885,-23.970400794719055]
         },
         properties: {
-          title: "Telérico de São Vicente",
+          title: "Teleférico de São Vicente",
           description: "Teleférico de São Vicente connects Praia do Itararé to Morro do Voturuá and is a popular attraction for those visiting the city."
         }
       },

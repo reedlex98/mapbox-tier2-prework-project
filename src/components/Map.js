@@ -2,9 +2,9 @@ import React from "react";
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 
 // const MapboxGeocoder = require("@mapbox/mapbox-gl-geocoder");
+let globalMap = ''
 
 class Map extends React.Component {
-
   createMap(accessToken, config) {
     mapboxgl.accessToken = accessToken;
     return new mapboxgl.Map(config);
@@ -24,9 +24,9 @@ class Map extends React.Component {
       .addTo(map);
     });
   }
-
+  
   componentDidMount() {
-    const map = this.createMap(
+      globalMap = this.createMap(
       "pk.eyJ1IjoicmVlZGxleDk4IiwiYSI6ImNqemhuZnJhdjA4M3kzaHFhMTB3dXR1aGkifQ.rMB3AI-KMw89KBRt2Q6KqQ",
       {
         container: "map-container", // HTML container id
@@ -37,8 +37,7 @@ class Map extends React.Component {
         zoom: 13
       }
     );
-    
-    this.createMarkers(this.props.locations, map);
+    this.createMarkers(this.props.locations, globalMap);
     // const geocoder = new MapboxGeocoder({
     //   accessToken: mapboxgl.accessToken,
     //   mapboxgl: mapboxgl,
@@ -53,6 +52,15 @@ class Map extends React.Component {
     // });
     
     // document.getElementById("geocoder").appendChild(geocoder.onAdd(map));
+  }
+  componentDidUpdate(){
+    const markers = document.querySelectorAll('.marker')
+    markers.forEach(
+      marker => marker.remove()
+    )
+    // if(markers.length === 1)
+    //   markers.click()
+    this.createMarkers(this.props.locations, globalMap);
   }
 
   render() {

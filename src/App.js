@@ -47,7 +47,7 @@ class App extends React.Component {
       return {
         filteredList: prevState.locations
           .filter(value =>
-            value.properties.title.toLowerCase().startsWith(this.state.search)
+            value.properties.title.toLowerCase().startsWith(prevState.search)
           )
           .map(value => value.properties.title)
       };
@@ -91,7 +91,7 @@ class App extends React.Component {
         />
         <Map
           locations={
-            this.state.filteredLocations
+            this.state.filteredLocations.length > 0
               ? this.state.filteredLocations
               : this.state.locations
           }
