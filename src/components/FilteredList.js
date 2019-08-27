@@ -6,11 +6,14 @@ const FilteredList = props => {
     if(props.search){
         return <div className="filter filter-list">
             <ul>
-                {mountedFilteredList ? mountedFilteredList : "Nothing found, please try other name"}
+                {mountedFilteredList.length > 0 ? mountedFilteredList : <li>Nothing found, please try other name</li>}
             </ul>
         </div>
     }   else{
-        return <div className="filter filter-list"> Use the input field to search a location
+        return <div className="filter filter-list"> 
+            <div className="tip">
+                Use the input field to search a location
+            </div>
             <ul>
                {completedList}
             </ul>   

@@ -1,36 +1,28 @@
-.rounded-button{
-    font-size: 3em;
-    border-radius: 20%;
-    padding: 10px;
-    color: rgba($color: #FFF, $alpha: 0.7);
-    background-color: rgba($color: #001100, $alpha: 0.65);
-}
-
-.sidebar-toggler{
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
+.sidebar-toggler {
+  font-size: 3em;
+  border-radius: 20%;
+  padding: 10px;
+  color: rgba($color: #fff, $alpha: 0.9);
+  background-color: rgba($color: #002200, $alpha: 0.65);
+  box-shadow: 0 0 50px forestgreen;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  right: 40%;
+  bottom: 25px;
+  @include breakpoint(min-width $breakpoint-desktop) {
     right: 25px;
-    bottom: 25px;
+  }
 }
 
-.sidebar-toggler:hover::before{
-    font-size: 0.25em;
-    bottom: 80px;
-    right: -15px;
-    width: 80px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    background-color: rgba($color: #000100, $alpha: 0.85);
-    position: absolute;
-    content: 'Toggle Menu'
-}
-
-.tutorial-arrow{
-    color: rgba($color: #FFF, $alpha: 0.7);
-    position: absolute;
-    bottom: 50px;
-    right: 200px;
-    transform: scale(10);
-    z-index: 2;
+.sidebar-toggler:hover::before {
+  font-size: 0.25em;
+  bottom: 80px;
+  right: -15px;
+  width: 80px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba($color: #000100, $alpha: 0.85);
+  position: absolute;
+  content: "Toggle Menu";
 }

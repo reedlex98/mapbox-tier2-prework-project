@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SidebarToggler = props => {
     return <div>
-        <div className='rounded-button sidebar-toggler' onClick={props.toggleSidebar}>
+        <div className='sidebar-toggler' onClick={props.toggleSidebar}>
             {props.isSidebarCollapsed ? <FontAwesomeIcon icon='toggle-off'/> : <FontAwesomeIcon icon='toggle-on'/>}
         </div>
     </div>

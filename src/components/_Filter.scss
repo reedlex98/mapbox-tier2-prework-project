@@ -1,45 +1,62 @@
-.filter{
-    width: 90%;
+.filter {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input,
+  ul li {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  input {
+    padding: 20px;
+    width: 85%;
+    color: lightgray;
+    border: none;
+    outline-color: rgb(80, 206, 80);
+  }
+  ul {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+    margin: 0;
+    height: 400px;
+    width: 350px;
+    li {
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+      padding: 15px;
+    }
+    li:hover {
+      background-color: rgba($color: #000000, $alpha: 0.95);
+    }
+    overflow-y: scroll;
+  }
+  ul::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  @include breakpoint(max-width $breakpoint-desktop) {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    input, ul li{
-        background-color: rgba($color: #000000, $alpha: .35);
-        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    .tip{
+        display: none;
+    }
+    ul {
+      height: 40px;
+      width: 80%;
+      li{
+          padding: 10px;
+      }
     }
     input{
-        padding: 20px;
-        width: 85%;
-        color: lightgray;  
-        border: none !important;
-        outline: none !important;
+        padding: 10px;
     }
-    div{
-        margin: 10px auto 0 auto;
-        padding: 0;
-        text-align: center;
-    }
-    ul{
-        list-style: none;
-        margin-top: 15px;
-        padding: 0;
-        margin: 0;
-        height: 400px;
-        width: 350px;
-        li{
-            border-bottom: 1px solid rgba($color: #FFF, $alpha: .2);
-            padding: 15px
-        }
-        li:hover{
-            background-color: rgba($color: #000000, $alpha: .95);
-        }
-        overflow-y: scroll;
-    }
-    ul::-webkit-scrollbar { width: 0 !important }
-
+  }
 }
-
-.filter.filter-list{
+@include breakpoint(min-width $breakpoint-desktop) {
+  .filter.filter-list {
     justify-content: space-around;
     height: 80vh;
+  }
 }

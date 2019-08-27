@@ -1,8 +1,11 @@
-@import './components/_Map';
-@import './components/_Sidebar';
-@import './components/_SidebarToggler';
-@import './components/_Filter';
-@import './components/_Marker';
+
+@import 'breakpoint-sass';
+@import './components/Variables';
+@import './components/Map';
+@import './components/Sidebar';
+@import './components/SidebarToggler';
+@import './components/Filter';
+@import './components/Marker';
 
 
 *{
