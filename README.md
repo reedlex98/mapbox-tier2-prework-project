@@ -22,7 +22,7 @@ npm install
 ### Run The App For Development
 
 ```bash
-npm run dev
+npm start
 ```
 
 ### Run for Production
