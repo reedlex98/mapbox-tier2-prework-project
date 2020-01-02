@@ -5,7 +5,7 @@
 ## Overview
 
 The goal of this project is to complete the Tier 2 Solo Project for [Chingu][1]
-Voyage 11.
+Voyage 11. It's an app which dynamically displays tourist spots in São Vicente (Brazil) by using MapBox API and MapBox GL JS library.
 
 ## Run in the browser
 
